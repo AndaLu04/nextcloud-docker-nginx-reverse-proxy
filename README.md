@@ -80,8 +80,8 @@ If you're unable to connect to some services, after the initial deployment try r
 2. Enter in a username and password; Select dropdown and change database to `MySQL/MariaDB`, enter the same credentials as in `docker-compose.yml` for your mariadb database; Change `localhost` to `db:3306`.
 
 ## Managing your Nextcloud config
-Backup: `docker-compose exec app cat /var/www/html/config/config.php > config.php`  
-Restore: `docker cp ./config.php nextclouddockernginxreverseproxy_nextcloud_1:/var/www/html/config/config.php`  
+Backup: `docker-compose exec nextloud cat /var/www/html/config/config.php > config.php`  
+Restore: `docker cp ./config.php nextcloud-docker-nginx-revers-eproxy_nextcloud_1:/var/www/html/config/config.php`  
 
 ## Configuring Nextcloud to trust the proxy
 | Property | Command | Notes |
