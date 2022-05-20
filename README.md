@@ -81,8 +81,10 @@ If you're unable to connect to some services, after the initial deployment try r
 
 ## Managing your Nextcloud config
 Backup: 
+
 `docker-compose exec nextcloud cat /var/www/html/config/config.php > config.php`  
 Restore: 
+
 `docker cp ./config.php nextcloud-docker-nginx-revers-eproxy_nextcloud_1:/var/www/html/config/config.php`  
 
 ## Configuring Nextcloud to trust the proxy
